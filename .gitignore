@@ -1,3 +1,5 @@
 key.pem
 cert.pem
 config.yml
+websites.db
+*.pyc
