@@ -8,5 +8,8 @@ Warning: on \*nix systems you must be root to use port < 1025.
 Generate a PEM certificate
 ```shell
 openssl req -newkey rsa:2048 -new -nodes -x509 -days 365 -keyout key.pem -out tmpcert.pem
+```
+Consolidate private key and certificate in the same file
+```shell
 cat tmpcert.pem key.pem > cert.pem
 ```
